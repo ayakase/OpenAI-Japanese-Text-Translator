@@ -100,7 +100,7 @@ def call_api(translate_content, total_lines,from_lang, to_lang):
         print("Translated line " + str(numbers[-1]))
         print(str(round(int(numbers[-1]) / total_lines *100, 2)) + "%")
     except Exception as e:
-        print(new_content)
+        # print(new_content)
         print(e) 
         call_api(translate_content, total_lines,from_lang, to_lang)
 def translate(input_path: str, output_path: str, from_lang: str, to_lang: str):
